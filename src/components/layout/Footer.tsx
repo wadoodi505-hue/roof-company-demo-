@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Twitter, Linkedin, MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { Mail, Phone, MapPin } from "lucide-react";
 import { Button } from '@/components/ui/button';
 
 export default function Footer() {
@@ -22,11 +22,7 @@ export default function Footer() {
               Premium roofing solutions protecting homes and businesses with guaranteed quality, fast response times, and honest pricing.
             </p>
             <div className="flex gap-4">
-              {[Facebook, Twitter, Instagram, Linkedin].map((Icon, i) => (
-                <a key={i} href="#" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-primary hover:border-primary transition-all duration-300">
-                  <Icon className="w-4 h-4" />
-                </a>
-              ))}
+              {/* Social icons bypassed temporarily to fix server crash */}
             </div>
           </div>
 
@@ -77,7 +73,7 @@ export default function Footer() {
                 <a href="mailto:info@eliteroof.com" className="hover:text-white transition-colors">info@eliteroof.com</a>
               </li>
               <li className="flex items-start gap-3 text-sm text-muted-foreground">
-                <Clock className="w-5 h-5 text-primary shrink-0" />
+                <MapPin className="w-5 h-5 text-primary shrink-0" />
                 <span>Mon-Sat: 7:00 AM - 7:00 PM<br/>Sun: Closed (24/7 Emergencies)</span>
               </li>
             </ul>
